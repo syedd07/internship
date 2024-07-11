@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Certificates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="certificate-container">
+            <div class="certificate-header">
+                Internship Certificate
+            </div>
+            <div class="certificate-details">
+                <p><strong>Company Name:</strong> Aneri Developers</p>
+                <p><strong>Role:</strong> Content Writing Intern</p>
+                <p><strong>Certificate Number:</strong> 4722CD26-67C3-5765-1295-6985FAA2C3F5</p>
+                <p><strong>Date of Issue:</strong> June 29, 2022</p>
+            </div>
+            <button class="verify-button" onclick="verifyCertificate('4722CD26-67C3-5765-1295-6985FAA2C3F5')">Verify Certificate</button>
+            <div class="message">Click the button to copy the certificate number and verify it on Internshala.</div>
+        </div>
+
+        <div class="certificate-container">
+            <div class="certificate-header">
+                Internship Certificate
+            </div>
+            <div class="certificate-details">
+                <p><strong>Company Name:</strong> Namaskar with Love Foundation</p>
+                <p><strong>Role:</strong> Content Writing Intern</p>
+                <p><strong>Certificate Number:</strong> E30FCFDF-C262-B432-C33B-D1660E8BFECF</p>
+                <p><strong>Date of Issue:</strong> June 23, 2022</p>
+            </div>
+            <button class="verify-button" onclick="verifyCertificate('E30FCFDF-C262-B432-C33B-D1660E8BFECF')">Verify Certificate</button>
+            <div class="message">Click the button to copy the certificate number and verify it on Internshala.</div>
+        </div>
+
+        <div class="certificate-container">
+            <div class="certificate-header">
+                Internship Certificate
+            </div>
+            <div class="certificate-details">
+                <p><strong>Company Name:</strong> Muskurahat Foundation</p>
+                <p><strong>Role:</strong> Volunteering Intern</p>
+                <p><strong>Certificate Number:</strong> axsgskylb1e</p>
+                <p><strong>Date of Issue:</strong> November 4, 2022</p>
+            </div>
+            <button class="verify-button" onclick="verifyCertificate('axsgskylb1e')">Verify Certificate</button>
+            <div class="message">Click the button to copy the certificate number and verify it on Internshala.</div>
+        </div>
+    </div>
+
+    <script>
+        function verifyCertificate(certificateNumber) {
+            navigator.clipboard.writeText(certificateNumber).then(() => {
+                alert('Certificate number copied to clipboard. You will be redirected to Internshala for verification.');
+                window.open('https://internshala.com/verify_certificate', '_blank');
+            }, () => {
+                alert('Failed to copy the certificate number.');
+            });
+        }
+    </script>
+</body>
+
+</html>
