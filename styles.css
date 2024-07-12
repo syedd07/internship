@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #e0f7fa, #80deea);
-    color: #333;
+    background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+    color: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -24,16 +24,23 @@ body {
 }
 
 .certificate-container {
-    background: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    background: linear-gradient(145deg, #333, #444);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
     padding: 30px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     transform: translateY(100px);
     animation: slideUp 0.5s ease-out forwards;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-container:hover {
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
 }
 
 @keyframes slideUp {
@@ -46,14 +53,15 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #00796b;
-    border-bottom: 2px solid #00796b;
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
     padding-bottom: 10px;
 }
 
 .certificate-details {
     font-size: 18px;
     margin-bottom: 30px;
+    color: #ddd;
 }
 
 .certificate-details p {
@@ -61,11 +69,11 @@ body {
 }
 
 .verify-button {
-    background-color: #4caf50;
+    background-color: #ff6f61;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -94,7 +102,7 @@ body {
 }
 
 .verify-button:hover {
-    background-color: #388e3c;
+    background-color: #e65c50;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -102,7 +110,7 @@ body {
 .message {
     margin-top: 10px;
     font-size: 14px;
-    color: #555;
+    color: #bbb;
 }
 
 /* Adding a background graphic */
@@ -113,7 +121,7 @@ body::before {
     right: -50px;
     width: 200px;
     height: 200px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     animation: move 10s infinite alternate;
 }
@@ -125,7 +133,7 @@ body::after {
     left: -50px;
     width: 200px;
     height: 200px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     animation: move 12s infinite alternate;
 }
@@ -142,7 +150,7 @@ body::after {
     content: "";
     position: absolute;
     border-radius: 50%;
-    background: rgba(0, 150, 136, 0.15);
+    background: rgba(255, 111, 97, 0.2);
     animation: pulse 6s infinite ease-in-out;
 }
 
