@@ -21,6 +21,26 @@ body {
     margin-bottom: 20px;
 
 }
+.link {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.copy-button{
+    
+    border-radius: 5px;
+    font-size: 15px;
+    color: #ff6f61;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.copy-button:hover {
+    color: #e65c50;
+    transform: scale(1.2);
+}
 
 .container {
     display: flex;
