@@ -13,6 +13,14 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+.header{ 
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
 
 .container {
     display: flex;
