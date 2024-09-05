@@ -17,3 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        console.log('Text copied to clipboard');
+        alert('Certificate number copied: ' + text);
+    }).catch(function(err) {
+        console.error('Could not copy text: ', err);
+    });
+}
